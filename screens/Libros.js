@@ -201,6 +201,7 @@ function Cupones({ navigation }) {
         </ScrollView>
       </SafeAreaView>
       <ScrollView>
+
         <View style={{ justifyContent: "center", alignItems: "center" }}>
           <View
             style={{
@@ -210,15 +211,6 @@ function Cupones({ navigation }) {
               height: 350,
               width: 300,
               marginTop: 10,
-              shadowColor: "#ddd",
-              shadowOffset: {
-                width: 0,
-                height: 1,
-              },
-              shadowOpacity: 0.9,
-              shadowRadius: 2,
-              margin: 10,
-              elevation: 2,
             }}
           >
             <View style={{ alignItems: "center" }}>
@@ -234,6 +226,116 @@ function Cupones({ navigation }) {
               en los Estados Unidos como fondo, entre 1861 y 1865, se convierten
               en mujeres. Está basada en las vivencias de la autora cuando era
               una niña y vivía en la ciudad de Concord (Massachusetts).
+            </Text>
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  margin: 5,
+                }}
+              >
+                <TouchableOpacity>
+                  <Icon name="heart-o" size={18} color="red" />
+                </TouchableOpacity>
+                <Text style={{ margin: 5, color: "#6B6B6B" }}>2.7 K</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  margin: 5,
+                }}
+              >
+                <TouchableOpacity>
+                  <Icon name="download" size={18} color="#3282b8" />
+                </TouchableOpacity>
+                <Text style={{ margin: 5, color: "#6B6B6B" }}>2.7 K</Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
+          <View
+            style={{
+              borderWidth: 0.5,
+              borderColor: "#dddddd",
+              borderRadius: 10,
+              height: 350,
+              width: 300,
+              marginTop: 10,
+            }}
+          >
+            <View style={{ alignItems: "center" }}>
+              <Image
+                source={require("../Images/DiarioAnaFrank.jpg")}
+                style={{ height: 130, width: 100, marginTop: 10 }}
+              />
+              <Text style={{ margin: 10, color: "#1b262c" }}>Mujercitas</Text>
+            </View>
+
+            <Text style={{ margin: 10, color: "#8C8C8C" }}>
+              El Diario de Ana Frank es el testimonio de una víctima del delirio a que llegó el mundo por acción de los nazis.
+              Fue encontrado y publicado por Miep Gies, una amiga de la familia, en 1947.
+              La II Guerra Mundial estalló tras la ruptura del “Pacto germano-soviético” firmado en agosto de 1939.
+            </Text>
+            <View
+              style={{ flexDirection: "row", justifyContent: "space-between" }}
+            >
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  margin: 5,
+                }}
+              >
+                <TouchableOpacity>
+                  <Icon name="heart-o" size={18} color="red" />
+                </TouchableOpacity>
+                <Text style={{ margin: 5, color: "#6B6B6B" }}>2.7 K</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: "row",
+                  alignItems: "center",
+                  margin: 5,
+                }}
+              >
+                <TouchableOpacity>
+                  <Icon name="download" size={18} color="#3282b8" />
+                </TouchableOpacity>
+                <Text style={{ margin: 5, color: "#6B6B6B" }}>2.7 K</Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
+        <View style={{ justifyContent: "center", alignItems: "center" }}>
+          <View
+            style={{
+              borderWidth: 0.5,
+              borderColor: "#dddddd",
+              borderRadius: 10,
+              height: 350,
+              width: 300,
+              marginTop: 10,
+            }}
+          >
+            <View style={{ alignItems: "center" }}>
+              <Image
+                source={require("../Images/LaMetamorfosis.jpg")}
+                style={{ height: 130, width: 100, marginTop: 10 }}
+              />
+              <Text style={{ margin: 10, color: "#1b262c" }}>Mujercitas</Text>
+            </View>
+
+            <Text style={{ margin: 10, color: "#8C8C8C" }}>
+              La metamorfosis es una narración autoría de Franz Kafka, publicada en 1915, que cuenta la historia de la
+              transformación de Gregorio Samsa en un monstruoso insecto, y del drama familiar que, a raíz de este
+              acontecimiento, se desata.
             </Text>
             <View
               style={{ flexDirection: "row", justifyContent: "space-between" }}
