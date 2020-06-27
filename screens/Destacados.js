@@ -12,18 +12,9 @@ import {
   TouchableNativeFeedback,
   TouchableOpacity,
 } from "react-native-gesture-handler";
+import { Linking } from 'react-native'
 
 const { height, width } = Dimensions.get("window");
-
-/*function DtCupon(navigation) {
-  navigation.navigate("DetallesCupon");
-}
-function Rcanjeado(navigation) {
-  navigation.navigate("MasCanjeado");
-}
-function Rrecomendado(navigation) {
-  navigation.navigate("Recomendados");
-}*/
 
 function Destacados({ navigation }) {
   return (
@@ -31,7 +22,6 @@ function Destacados({ navigation }) {
       <View style={{ flex: 1, paddingTop: 15 }}>
         <TouchableOpacity
           style={{ flexDirection: "row" }}
-          onPress={() => Rcanjeado(navigation)}
         >
           <Text
             style={{
@@ -67,6 +57,7 @@ function Destacados({ navigation }) {
                 borderColor: "#dddddd",
                 borderRadius: 10,
               }}
+              onPress={() => Linking.openURL("https://drive.google.com/file/d/1zf82721Jemv8llHI3lJIgX8YZMI8GyJv/view?usp=sharing")}
             >
               <View style={{ flex: 2 }}>
                 <Image
@@ -96,6 +87,7 @@ function Destacados({ navigation }) {
                 borderColor: "#dddddd",
                 borderRadius: 10,
               }}
+              onPress={() => Linking.openURL("https://drive.google.com/file/d/1V4qLD-k3S481nn3g05qtEJKAHabn56EY/view?usp=sharing")}
             >
               <View style={{ flex: 2 }}>
                 <Image
@@ -114,34 +106,6 @@ function Destacados({ navigation }) {
               </View>
             </TouchableNativeFeedback>
 
-            <TouchableNativeFeedback
-              name="card2"
-              style={{
-                height: 250,
-                width: 250,
-                marginLeft: 20,
-                marginRight: 5,
-                borderWidth: 0.5,
-                borderColor: "#dddddd",
-                borderRadius: 10,
-              }}
-            >
-              <View style={{ flex: 2 }}>
-                <Image
-                  source={require("../Images/ElHobbit.jpg")}
-                  style={{
-                    flex: 1,
-                    width: null,
-                    height: null,
-                    resizeMode: "cover",
-                  }}
-                />
-              </View>
-
-              <View style={{ flex: 1, paddingLeft: 10, paddingTop: 10 }}>
-                <Text> El Hobbit </Text>
-              </View>
-            </TouchableNativeFeedback>
 
             <TouchableNativeFeedback
               name="card3"
@@ -154,10 +118,11 @@ function Destacados({ navigation }) {
                 borderColor: "#dddddd",
                 borderRadius: 10,
               }}
+              onPress={() => Linking.openURL("https://drive.google.com/file/d/1PGzEzRZXlWUZ21bm1mgQZ62MsGn9TMmY/view?usp=sharing")}
             >
               <View style={{ flex: 2 }}>
                 <Image
-                  source={require("../Images/Elprincipito.jpg")}
+                  source={require("../Images/LosMiserables.jpg")}
                   style={{
                     flex: 1,
                     width: null,
@@ -168,7 +133,7 @@ function Destacados({ navigation }) {
               </View>
 
               <View style={{ flex: 1, paddingLeft: 10, paddingTop: 10 }}>
-                <Text> El Principito </Text>
+                <Text> Los Miserables </Text>
               </View>
             </TouchableNativeFeedback>
           </ScrollView>
@@ -177,7 +142,6 @@ function Destacados({ navigation }) {
         <View style={{ paddingTop: 15 }}>
           <TouchableOpacity
             style={{ flexDirection: "row" }}
-            onPress={() => Rrecomendado(navigation)}
           >
             <Text
               style={{
@@ -220,6 +184,7 @@ function Destacados({ navigation }) {
               marginBottom: 10,
               marginTop: 10,
             }}
+            onPress={() => Linking.openURL("https://drive.google.com/file/d/1rESyil7upFD9rNCyyOPIdolzswOtXLis/view?usp=sharing")}
           >
             <View style={{ flex: 2 }}>
               <Image
@@ -250,6 +215,7 @@ function Destacados({ navigation }) {
               marginBottom: 10,
               marginTop: 10,
             }}
+            onPress={() => Linking.openURL("https://drive.google.com/file/d/1Az8wYYdQyW33NONsa670NCyo7Pcf9_bL/view?usp=sharing")}
           >
             <View style={{ flex: 2 }}>
               <Image

@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import Icon from "react-native-vector-icons/FontAwesome";
+
 export class Perfil extends Component {
   constructor() {
     super();
@@ -59,7 +60,6 @@ export class Perfil extends Component {
                 marginTop: 10,
               }}
             />
-            <Text style={{ margin: 10, color: "#8C8C8C" }}>Carlos Rubén</Text>
           </View>
         </View>
         <View style={{ flexDirection: "row" }}>
@@ -119,6 +119,7 @@ export class Perfil extends Component {
             <Text style={{ color: "#0f4c75", fontSize: 12 }}>Descargas</Text>
           </TouchableOpacity>
         </View>
+
         <View style={{ flex: 1, marginTop: 100 }}>
           <Modal transparent={true} visible={this.state.show}>
             <View
@@ -161,6 +162,7 @@ export class Perfil extends Component {
                     }}
                     onPress={() => {
                       this.setState({ show: false });
+                      navigation.navigate('Login');
                     }}
                   >
                     <Text style={{ color: "#ADADAD" }}>Sí</Text>
